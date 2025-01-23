@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .success-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .success-container h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #fac031;
+        }
+
+        .success-container p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .success-container .checkmark {
+            font-size: 50px;
+            color: #fac031;
+            margin-bottom: 20px;
+        }
+
+        .success-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fac031;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .success-container a:hover {
+            background-color: #ae7f06;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="checkmark">✔</div>
+        <h1>Payment Successful!</h1>
+        <p>Thank you for your purchase. Your payment has been processed successfully.</p>
+        <a href="index.html" id="goHome">Go to Home</a>
+    </div>
+    <script>
+        // Optional: Add a confirmation or additional JavaScript functionality
+        const goHomeButton = document.getElementById('goHome');
+        goHomeButton.addEventListener('click', function () {
+            alert('Ordered Successfully');
+            // You can add further functionality here if needed.
+        });
+    </script>
+</body>
+</html>

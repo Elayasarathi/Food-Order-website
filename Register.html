@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="RegisterStyle.css">
+</head>
+<body>
+    <div class="register-container">
+        <form action="index.html">
+            <h1>Sign Up</h1>
+            <div class="input-box">
+               <input type="number" placeholder="Phone Number" required> 
+               <span class="icon"><i class='bx bxs-user-detail'></i></span>  
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="User Name" required>
+                <span class="icon"><i class='bx bx-user'></i></span>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email" required>
+                <span class="icon"><i class='bx bx-envelope'></i></span>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Create Password" required>
+                <span class="icon"><i class='bx bx-lock-alt'></i></span>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password">
+                <span class="icon"><i class='bx bx-lock-alt'></i></span>
+            </div>
+            <div class="input-box input3">
+                <p class="pp">Capture</p>
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Capture Number" required id="int">
+                <span class="icon" onclick="myfunction()"><i class='bx bx-lock-alt'></i></span>
+            </div>
+            <div class="check">
+                <input type="checkbox"<p>i agree to Foodle <span style="color:red;">Terms of service privacy Policy </span>and<span style="color:red;"> content Policies</span></p>
+            </div>
+            
+                <input class="submit" type="submit" value="Sign Up" onClick="myfunction()">
+            <footer class="footer">
+                <p>Already have an account? <a href="Login.html">Login</a></p>
+            </footer>
+        </form>
+    </div>
+   <script src="js.js"></script>
+</body>
+</html>

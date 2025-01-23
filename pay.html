@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .payment-container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .payment-container h1 {
+            margin-bottom: 20px;
+            color:#fac031;
+        }
+
+        .payment-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .payment-container select,
+        .payment-container input[type="text"],
+        .payment-container input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            box-sizing: border-box;
+        }
+
+        .payment-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #fac031;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .payment-container button:hover {
+            background-color: #ae7f06;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Payment Page</h1>
+        <form action="payment.html">
+            <label for="paymentMethod">Select Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="creditCard">Credit Card</option>
+                <option value="debitCard">Debit Card</option>
+                <option value="upi">UPI</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+
+            <label for="cardNumber">Card Number (if applicable):</label>
+            <input type="number" id="cardNumber" name="cardNumber" placeholder="Enter card number">
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>
